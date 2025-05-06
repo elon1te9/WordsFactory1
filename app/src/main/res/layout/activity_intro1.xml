@@ -13,7 +13,7 @@
         android:layout_height="60dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/rubik_medium"
-        android:text="Learn anytime and anywhere"
+        android:text="Lear anytime and anywhere"
         android:textAlignment="center"
         android:textColor="#3C3A36"
         android:textSize="24dp"
