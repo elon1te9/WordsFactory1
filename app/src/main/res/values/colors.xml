@@ -2,4 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="dot_active">#65AAEA</color>
+    <color name="dot_inactive">#D5D4D4</color>
+    <color name="dark_gray">#78746D</color>
+    <color name="dark">#3C3A36</color>
+    <color name="gray">#BEBAB3</color>
+    <color name="light_gray">#F8F2EE</color>
+    <color name="button">#E3562A</color>
+
 </resources>

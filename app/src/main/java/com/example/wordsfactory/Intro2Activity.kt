@@ -18,6 +18,13 @@ class Intro2Activity : AppCompatActivity() {
         bindingClass.btNext.setOnClickListener {
             intent = Intent(this, Intro3Activity::class.java)
             startActivity(intent)
+            finish()
+        }
+
+        bindingClass.btSkip.setOnClickListener {
+            val intent = Intent(this, SignUpActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }

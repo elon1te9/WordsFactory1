@@ -16,7 +16,7 @@
         android:text="Find a course for you"
         android:textAlignment="center"
         android:textSize="24dp"
-        android:textColor="#3C3A36"
+        android:textColor="@color/dark"
         app:layout_constraintEnd_toEndOf="@+id/imPhoto"
         app:layout_constraintStart_toStartOf="@+id/imPhoto"
         app:layout_constraintTop_toBottomOf="@+id/imPhoto" />
@@ -39,6 +39,7 @@
         android:fontFamily="@font/rubik_regular"
         android:text="Quarantine is the perfect time to spend your day learning something new, from anywhere!    "
         android:textAlignment="center"
+        android:textColor="@color/dark_gray"
         android:textSize="14dp"
         app:layout_constraintEnd_toEndOf="@+id/tvTitle"
         app:layout_constraintStart_toStartOf="@+id/tvTitle"
@@ -47,10 +48,10 @@
 
     <Button
         android:id="@+id/btNext"
-        android:layout_width="340dp"
+        android:layout_width="343dp"
         android:layout_height="65dp"
         android:layout_marginBottom="50dp"
-        android:backgroundTint="#E3562A"
+        android:backgroundTint="@color/button"
         android:fontFamily="@font/rubik_medium"
         android:text="Next"
         android:textAlignment="center"
@@ -61,4 +62,53 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imPhoto"
         app:layout_constraintStart_toStartOf="@+id/imPhoto" />
+
+    <LinearLayout
+        android:id="@+id/llDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/btNext"
+        app:layout_constraintLeft_toLeftOf="@id/btNext"
+        app:layout_constraintRight_toRightOf="@id/btNext"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <View
+            android:id="@+id/dot1"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:background="@drawable/indicator_dot_inactive" />
+
+        <View
+            android:id="@+id/dot2"
+            android:layout_width="16dp"
+            android:layout_height="6dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/indicator_dot_active" />
+
+        <View
+            android:id="@+id/dot3"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/indicator_dot_inactive" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:background="@android:color/transparent"
+        android:textColor="@color/dark_gray"
+        android:textAllCaps="false"
+        android:padding="16dp"
+        android:stateListAnimator="@null"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
