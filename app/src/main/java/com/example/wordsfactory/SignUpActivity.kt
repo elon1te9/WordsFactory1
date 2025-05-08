@@ -1,5 +1,6 @@
 package com.example.wordsfactory
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -13,5 +14,11 @@ class SignUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         bindingClass = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(bindingClass.root)
+
+        bindingClass.btSignUp.setOnClickListener {
+            val intent = Intent(this, DictionaryActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }
